@@ -49,7 +49,7 @@ class userUpdate(Resource):
         except Exception as e:
             return make_response(jsonify(
                 {
-                    'title': "Unsuccessful from user creation",
+                    'title': "Unsuccessful from user updation",
                     "status": HTTPStatus.BAD_REQUEST,
                     "error": {
                         "message": str(e)
